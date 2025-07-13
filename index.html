@@ -1,12 +1,41 @@
+<!--
+ * user interfaces added
+ * .buttons disabed
+-->
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Welcome to my rock-paper-scissors game</h1>
+    <div id="main">
+        <button id="start">Start Game !</button>
+        <div id="buttons" >
+            <button id="Rock" disabled>Rock</button>
+            <button id="Paper" disabled>Paper</button>
+            <button id="Scissors" disabled>Scissors</button>
+        </div>
+        <div id="result">
+            <div id="choice">
+                <p>Bot's choice<span id="computersChoice"></span></p>
+                <p>Your Choice<span id="humanChoice"></span></p>
+            </div>
+            <div id="score">
+                <p>Bot's Score<span id="computersScore"></span></p>
+                <p>Your Score<span id="humanScore"></span></p>
+            </div>
+        </div>
+        <p id="message"></p>
+        <p id="winner"></p>
+    </div> 
 </body>
 </html>
